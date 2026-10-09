@@ -1,0 +1,65 @@
+print("=" * 50)
+print("AD GÜNÜ ƏYLƏNCƏ OYUNU ")
+print("=" * 50)
+xal = 0
+
+ad = input(" adını daxil et: ").strip().capitalize()
+print("Xoş gəldin, {ad}! Bu gün xallar toplayaraq ən böyük hədiyyəni qazanmalısan.")
+print("\n" + "-" * 40)
+print("Hər düzgün cavab = 10 Xal")
+print("-" * 40)
+print("Sual 1: Dünyada ən çox oxunan 'Ad günün mübarək' mahnısı hansı dildə bəstələnib?")
+print("A) Fransız dili\nB) İngilis dili\nC) İspan dili")
+cavab1 = input("Cavabın (A, B və ya C): ").strip().upper()
+
+if cavab1 == "B":
+    print("duzgun cavab! +10 xal qazandın.")
+    xal += 10
+else:
+    print("səhvdir! Doğru cavab: B) İngilis dili ('Happy Birthday to You').")
+
+print("Sual 2: Tortun üzərindəki şamları bir üfürmədə söndürmək nəyi simvolizə edir?")
+print("A) Bütün arzuların çin olacağını\nB) Çoxlu pul qazanacağını\nC) Tənbəl olduğunu")
+cavab2 = input("Cavabın (A, B və ya C): ").strip().upper()
+
+if cavab2 == "A":
+    print("Düzgün cavab! +10 xal qazandın.")
+    xal += 10
+else:
+    print("Yanlış cavab. Doğru cavab A bəndi idi.")
+
+print("\nSual 3: Kosmosda ad gününü qeyd edən ilk insan kim olub?")
+print("A) Nil Armstronq\nB) Yuri Qaqarin\nC) Cerri Ross")
+cavab3 = input("Cavabın (A, B və ya C): ").strip().upper()
+
+if cavab3 == "C":
+    print("Bəli, mükəmməl bilik! +10 xal qazandın.")
+    xal += 10
+else:
+    print("Təəssüf ki səhvdir. Doğru cavab: C) Cerri Ross (1988-ci ildə).")
+
+print("\n" + "-" * 40)
+print("Şamları üfləmək vaxtıdır!")
+print("-" * 40)
+
+komanda = input("Şamları üfləmək üçün 'UFLA' yaz: ").strip().upper()
+while komanda != "UFLA":
+    komanda = input("Şamlar hələ yanır! 'UFLA' yaz: ").strip().upper()
+
+print("Pffff... Bütün şamlar söndü! (+10 Xal bonus)")
+xal += 10
+print("\n" + "=" * 50)
+print(f"YEKUN NƏTİCƏ: {ad}, sən toplam {xal} XAL topladın!")
+print("=" * 50)
+
+if xal == 40:
+    print(" MÜKƏMMƏL NƏTİCƏ! Sən tam bir Ad Günü Çempionusan!")
+    print("Sənin Hədiyyən: Bütün arzularının 100% çin olması və sonsuz xoşbəxtlik!")
+elif xal >= 20:
+    print(" ÇOX YAXŞI! Yaxşı bilik nümayiş etdirdin.")
+    print("Sənin Hədiyyən: Bol uğur, sağlamlıq və yeni nailiyyətlər!")
+else:
+    print(" TƏBRİKLƏR! Əsas olan iştirak etməkdir.")
+    print(" Sənin Hədiyyən: Səmimi təbrik və gözəl əhval-ruhiyyə!")
+
+print("\n Doğum günün mübarək! \n")
