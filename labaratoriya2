@@ -1,0 +1,4 @@
+def add_vat(price,vat_percent=18):
+    result (price 
+    return result
+print(add_vat(100,18))
