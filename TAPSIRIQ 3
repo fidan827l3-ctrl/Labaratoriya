@@ -1,0 +1,10 @@
+def build_username(first, last, year=""):
+    username=f"{first.lower()}.{last.lower()}"
+    
+    if year:
+        username+=str(year)
+        
+    return username 
+    
+print(build_username ("aysel","memmedov"))
+print(build_username("kamran","Aliyev",2005))
