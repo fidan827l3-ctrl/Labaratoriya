@@ -1,0 +1,17 @@
+def add_vat(amount):
+    return amount * 1.18
+
+def average(a, b):
+    return (a + b) / 2.0
+
+def build_username(name, surname):
+    return f"{name.lower()}.{surname.lower()}"
+
+def with_bonus(scores, bonus):
+    result = []
+    for score in scores:
+        new_score = score + bonus
+        if new_score > 100:
+            new_score = 100
+        result.append(new_score)
+    return result
