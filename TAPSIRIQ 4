@@ -1,0 +1,21 @@
+def make_student(name,score,group=""):
+    student={
+        "name":name,
+        "score":score
+    }
+    if group:
+        student["group"]=group
+        return student 
+        
+test_student =make_student("Kamran", 61, "CE-101")
+print(test_student)
+students=[]
+while True:
+    name=input("Name(quit to stop):")
+    if name=="quit":
+        break
+    score=int(input("score:"))
+    student_data=make_student(name,score)
+    students.append(student_data)
+for student in students:
+    print(f"{student['name']}: {student['score']}")
