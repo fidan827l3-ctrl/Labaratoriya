@@ -1,0 +1,26 @@
+def add_student(students, name ,score):
+        students.append ({"name":name,"score":score})
+def average_score(students):
+    return sum (s['score'] for s in students)/len(students) if students else 0
+def top_student (students):
+    return max (students,key=lambda s: s['score'])if students else None
+def print_report (students):
+    for s in students :
+        print(f"{s['name']}: {s['score']}")
+    print (f"Average: {average_score(students)}")
+    top=top_student(students)
+    if top:
+        print (f"Top student :{top ['name']}")
+        
+students=[]
+while True :
+    choice =input ("Choice (1-Add, 2-Report,3-Quit):" )
+    if choice =='1':
+        add_student(students,input ("Name:"), float(input("Score:")))
+    elif choice=='2':
+        print_report(students)
+    elif choice =='3':
+        break 
+    else :
+        print("yanlis secim !")
+        
