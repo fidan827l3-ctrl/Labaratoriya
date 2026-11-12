@@ -1,0 +1,4 @@
+def scores(*numbers):
+    return max(numbers)
+
+print (scores(78, 91, 85, 67, 95, 88))
