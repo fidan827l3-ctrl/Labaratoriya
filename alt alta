@@ -1,0 +1,8 @@
+def students(*name):
+    print("students:")
+    for student in name :
+        print (student)
+    print(f"total student: {len(name)}")
+    
+    
+students ( "Ali", "Leyla", "Kamran", "Aysel")
