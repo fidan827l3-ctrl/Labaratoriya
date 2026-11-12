@@ -1,0 +1,4 @@
+def scores(*numbers):
+    return sum(numbers)/len(numbers)
+
+print (scores(78, 91, 85, 67, 95, 88))
