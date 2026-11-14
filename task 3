@@ -1,0 +1,7 @@
+def register_students(*students):
+    print("register_students:")
+    for student in students:
+        print(student)
+    print (f"total student:{len(students)}")
+    
+register_students("Ali", "Leyla", "Kamran")
