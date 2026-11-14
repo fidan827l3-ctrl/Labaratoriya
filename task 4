@@ -1,0 +1,26 @@
+def register_students(*students):
+    print("register_students:")
+    for student in students:
+        print(student)
+    print (f"total student:{len(students)}")
+    
+def scores(*numbers):
+    return f"lowest score:{min(numbers)}"
+    
+def score(*numbers):
+    return f"high score:{max(numbers)}"
+    
+def students(*name):
+    print("students:")
+    for student in name :
+        print (student)
+    print(f"total student: {len(name)}")
+    
+def scor(*numbers):
+    return f"average score:{sum(numbers)/len(numbers)}"
+
+print (scor(78, 91, 85, 67, 95, 88))    
+students ( "Ali", "Leyla", "Kamran", "Aysel")    
+print(score(78, 91, 85, 67, 95, 88))
+print(scores(78, 91, 85, 67, 95, 88))
+register_students("Ali", "Leyla", "Kamran")
